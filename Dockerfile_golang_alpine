@@ -2,7 +2,7 @@ FROM golang:1.8.3-alpine3.6
 
 COPY . /go/src/github.com/fatedier/frp
 
-RUN apk add make
+RUN apk --no-cache add make
 
 RUN cd /go/src/github.com/fatedier/frp \
  && make \
